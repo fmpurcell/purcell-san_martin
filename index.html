@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purcell & San Martín</title>
+    <meta name="Joint" content="Portafolio de Francisca Purcell y Jacinta San Martín">
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+    <!-- Metadatos Genéricos -->
+    <meta name="Joint" content="Portafolio de Francisca Purcell y Jacinta San Martín diseños">
+    <meta name="image" content="media/favicon.png">
+    <!-- Metadatos para Schema.org for Google -->
+    <meta itemprop="Joint" content="Joint">
+    <meta itemprop="description" content="Portafolio de Francisca Purcell y Jacinta San Martín">
+    <meta itemprop="image" content="media/favicon.png">
+    <!-- Metadatos para Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Joint">
+    <meta name="twitter:description" content="Portafolio de Francisca Purcell y Jacinta San Martín">
+    <meta name="twitter:image" content="media/favicon.png">
+    <!-- Metadatos para Open Graph general (Facebook y Pinterest) -->
+    <meta name="og:title" content="Joint">
+    <meta name="og:description" content="Portafolio de Francisca Purcell y Jacinta San Martín">
+    <meta name="og:image" content="media/favicon.png">
+    <meta name="og:locale" content="es_CL">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <div id="contenido">
+        <header>
+            <h1></h1>
+            <h2>Diseños modernos y vanguardistas</h2>
+        </header>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="media/Video.mp4" type="Video/mp4">
+        </video>
+
+        <h3>UN EQUIPO QUE TRANSFORMA GRANDES IDEAS EN GRANDES PROYECTOS</h3>
+        <div id="somos">
+
+            <div class="dupla primera">
+                <h4>FRANCISCA PURCELL</h4>
+                <h5>Diseñadora industrial</h5>
+                <p>Estudiante Diseño Pontificia Universidad Católica</p>
+                <address><a href="mailto:jsanmartin1@uc.cl">fmpurcell@uc.cl</a></address>
+            </div>
+
+            <div class="dupla segunda">
+                <h4>JACINTA SAN MARTÍN</h4>
+                <h5>Diseñadora gráfica</h5>
+                <p>Estudiante Diseño Pontificia Universidad Católica</p>
+                <address><a href="mailto:jsanmartin1@uc.cl">jsanmartin1@uc.cl</a></address>
+            </div>
+
+            <hr />
+        </div><!-- acá cerramos el div id="somos"-->
+
+        <h3>NUESTROS PROYECTOS</h3>
+
+        <div id="portafolio">
+
+            <!--acá se colocan y organizan las cosas con programación-->
+
+        </div><!-- acá cerramos el div id="portafolio"-->
+
+        <footer>
+            <p>Procesos de Producción · sección web · primer semestre · 2019</p>
+        </footer>
+
+    </div><!-- acá abajo cerramos el div id="contenido"-->
+
+    <!-- Lo que sigue SI es PROGRAMACIÓN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        // ESTO SIRVE PARA ARREGLAR CADA ÍTEM DEL PORTAFOLIO COMO ALBAÑILERÍA (MASONRY)
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
